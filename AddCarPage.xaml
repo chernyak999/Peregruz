@@ -1,0 +1,55 @@
+﻿<Page x:Class="Peregruz.AddCarPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Peregruz"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddCarPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Background="#c2d1e5" Grid.ColumnSpan="2"></Grid>
+        <TextBlock Grid.ColumnSpan="2" Text="Добавить автомобиль" FontSize="30" HorizontalAlignment="Center"></TextBlock>
+        <Grid Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="36"></RowDefinition>
+                <RowDefinition Height="36"></RowDefinition>
+                <RowDefinition Height="36"></RowDefinition>
+                <RowDefinition Height="36"></RowDefinition>
+                <RowDefinition Height="36"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Марка" FontSize="20" Grid.Row="0"></TextBlock>
+            <TextBlock Text="Модель" FontSize="20" Grid.Row="1"></TextBlock>
+            <TextBlock Text="Гос. номер" FontSize="20" Grid.Row="2"></TextBlock>
+            <TextBlock Text="VIN" FontSize="20" Grid.Row="3"></TextBlock>
+            <TextBlock Text="Номер ПТС" FontSize="20" Grid.Row="4"></TextBlock>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="36"></RowDefinition>
+                <RowDefinition Height="36"></RowDefinition>
+                <RowDefinition Height="36"></RowDefinition>
+                <RowDefinition Height="36"></RowDefinition>
+                <RowDefinition Height="36"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="txtBoxCarBrand" Grid.Row="0" Text="{Binding CarBrand}"></TextBox>
+            <TextBox x:Name="txtBoxCarModel" Grid.Row="1" Text="{Binding CarModel}"></TextBox>
+            <TextBox x:Name="txtBoxLicensePlate" Grid.Row="2" Text="{Binding LicensePlate}"></TextBox>
+            <TextBox x:Name="txtBoxVIN" Grid.Row="3" Text="{Binding VIN}"></TextBox>
+            <TextBox x:Name="txtBoxCarPassport" Grid.Row="4" Text="{Binding CarPassport}"></TextBox>
+        </Grid>
+        <Grid Grid.Row="3" Grid.ColumnSpan="2" Width="230">
+            <Button Content="Сохранить" Name="btnAdd" HorizontalAlignment="Center" Click="btnAdd_Click"></Button>
+        </Grid>
+    </Grid>
+</Page>

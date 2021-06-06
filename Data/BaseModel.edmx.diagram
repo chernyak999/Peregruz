@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5d0debfd3dd8437499f7e2d8af7c6cc7" Name="Diagram1">
+        <EntityTypeShape EntityType="TransportCompanyModel.AuthHistory" Width="1.5" PointX="10.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TransportCompanyModel.Car" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TransportCompanyModel.Customer" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TransportCompanyModel.Driver" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TransportCompanyModel.Order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TransportCompanyModel.OrderStatus" Width="1.5" PointX="0.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TransportCompanyModel.Role" Width="1.5" PointX="5.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TransportCompanyModel.Route" Width="1.5" PointX="0.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TransportCompanyModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TransportCompanyModel.User" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="TransportCompanyModel.FK_AuthHistory_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TransportCompanyModel.FK_Order_Car" ManuallyRouted="false" />
+        <AssociationConnector Association="TransportCompanyModel.FK_Order_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="TransportCompanyModel.FK_Order_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="TransportCompanyModel.FK_Order_OrderStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="TransportCompanyModel.FK_Order_Route" ManuallyRouted="false" />
+        <AssociationConnector Association="TransportCompanyModel.FK_User_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
